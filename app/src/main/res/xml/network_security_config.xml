@@ -4,5 +4,7 @@
         <domain includeSubdomains="true">192.168.0.143</domain>
         <domain includeSubdomains="true">0.0.0.0</domain>
         <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">dapi.kakao.com</domain>
+        <domain includeSubdomains="true">daumcdn.net</domain>
     </domain-config>
 </network-security-config>

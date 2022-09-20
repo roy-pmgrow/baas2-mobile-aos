@@ -24,14 +24,6 @@ class MainActivity : AppCompatActivity() {
         binding.webview.settings.javaScriptEnabled = true
         binding.webview.settings.domStorageEnabled = true
         binding.webview.loadUrl("http://192.168.0.143:3000/")
-        binding.webview.webChromeClient = object : WebChromeClient() {
-            override fun onConsoleMessage(consoleMessage: ConsoleMessage?): Boolean {
-                consoleMessage?.apply {
-                    Log.d("MyApplication", "${message()} -- From line ${lineNumber()} of ${sourceId()}")
-                }
-                return true
-            }
-        }
 
         binding.swipeRefreshLayout.setOnRefreshListener {
             binding.webview.reload();
